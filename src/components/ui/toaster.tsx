@@ -26,8 +26,10 @@ export const Toaster: React.FC<ToasterProps> = ({ ...props }) => {
           toast:
             "group toast group-[.toaster]:bg-background group-[.toaster]:text-sm group-[.toaster]:text-foreground group-[.toaster]:border-border group-[.toaster]:shadow-lg",
           description: "group-[.toast]:text-muted-foreground",
-          actionButton: "group-[.toast]:bg-primary group-[.toast]:text-primary-foreground",
-          cancelButton: "group-[.toast]:bg-muted group-[.toast]:text-muted-foreground",
+          actionButton:
+            "group-[.toast]:bg-primary group-[.toast]:text-primary-foreground",
+          cancelButton:
+            "group-[.toast]:bg-muted group-[.toast]:text-muted-foreground",
           closeButton:
             "group-[.toast]:size-5 group-[.toast]:bg-muted group-[.toast]:text-foreground group-[.toast]:border-0 group-[.toast]:hover:!bg-destructive group-[.toast]:hover:!text-destructive-foreground",
           error: "group-[.toaster]:text-destructive",
