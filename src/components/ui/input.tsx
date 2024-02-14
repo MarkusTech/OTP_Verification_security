@@ -19,7 +19,12 @@ export type InputProps = React.InputHTMLAttributes<HTMLInputElement> &
 const Input = React.forwardRef<HTMLInputElement, InputProps>(
   ({ className, type, error, ...props }, ref) => {
     return (
-      <input type={type} className={cn(inputVariants({ className, error }))} ref={ref} {...props} />
+      <input
+        type={type}
+        className={cn(inputVariants({ className, error }))}
+        ref={ref}
+        {...props}
+      />
     );
   }
 );
