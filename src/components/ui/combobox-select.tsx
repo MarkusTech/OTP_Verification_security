@@ -51,7 +51,9 @@ export const ComboboxSelect: React.FC<ComboboxProps> = ({
         <Command
           defaultValue={defaultValue}
           filter={
-            filter !== undefined ? (value, search) => (filter(value, search) ? 1 : 0) : undefined
+            filter !== undefined
+              ? (value, search) => (filter(value, search) ? 1 : 0)
+              : undefined
           }
         >
           <Command.Input placeholder={placeholder} />
@@ -72,7 +74,9 @@ export const ComboboxSelect: React.FC<ComboboxProps> = ({
                 <CheckIcon
                   className={cn(
                     "mr-2 h-4 w-4",
-                    option.value === selectedOption.value ? "opacity-100" : "opacity-0"
+                    option.value === selectedOption.value
+                      ? "opacity-100"
+                      : "opacity-0"
                   )}
                 />
                 {option.label}
